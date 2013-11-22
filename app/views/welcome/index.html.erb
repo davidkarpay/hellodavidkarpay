@@ -1,7 +1,14 @@
-<h2>Hello World</h2>
-<p>The time is now: <%= Time.now %>
-<div id="rename"><p style="font-family:Garamound">If you want to change my name, run this command:</p>
-	<p style="font-family:Courier">$ heroku apps:rename newname</p>
-	<p style="Garamound">You'll then see:</p>
-	<p style="font-family:Courier">http://newname.heroku.com/ | git@heroku.com:newname.git</p>
-	<p style="font-family:Courier">Git remote heroku updated</p>
+<h1>Welcome#index</h1>
+<p>Find me in app/views/welcome/index.html.erb</p>
+<p>The time is now <%= Time.now %></p>
+
+<h3>Send me an email:</h3>
+
+<form action="MAILTO:dlkarpay@gmail.com" method="post" encype="text/plain">Name:<br>
+	<input type="text" name="name" value="your name"><br>
+	E-mail:<br>
+	<input type="text" name="mail" value="your email"><br>
+	Comment:<br>
+	<input type="text" name="comment" value="your comment" size="50"><br><br><input type="submit" value="Send">
+	<input type="reset" value="Reset">
+</form>
