@@ -1,6 +1,7 @@
 Myapp::Application.routes.draw do
+  get "posts/new"
+  resources :posts
 
-  get "bootstrap/index"
   root "welcome#index" # requests to root of app should go to the welcome controller's index page
 #  ^        ^      ^-- action
 #  request  controller
