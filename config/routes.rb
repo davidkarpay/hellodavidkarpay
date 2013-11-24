@@ -1,6 +1,10 @@
 Myapp::Application.routes.draw do
-  get "welcome/index"
-  root 'welcome#index'
+
+  get "bootstrap/index"
+  root "welcome#index" # requests to root of app should go to the welcome controller's index page
+#  ^        ^      ^-- action
+#  request  controller
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
