@@ -1,14 +1,5 @@
 <h1>New Post</h1>
-<%= form_for :post, url: posts_path do |f| %> <!-- this is the "form_for" a :post -->
-    <p>
-      <%= f.label :title %><br> <!-- Title -->
-      <%= f.text_field :title %> <!-- title field -->
-    </p>
-    <p>
-      <%= f.label :text %><br>
-      <%= f.text_area :text %>
-    </p>
-    <p>
-      <%= f.submit %>
-    </p>
-<% end %>
+
+<%= render 'form' %>
+
+<%= link_to 'Back', posts_path %>

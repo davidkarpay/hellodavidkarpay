@@ -32,6 +32,10 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :development do
+  gem 'hirb'
+end
+
 gem 'rails_12factor', group: :production
 
 gem 'pg'
