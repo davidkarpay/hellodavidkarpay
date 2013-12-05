@@ -4,7 +4,9 @@ Myapp::Application.routes.draw do
     resources :comments # comments are a 'nested' route within posts
   end
 
-  root "welcome#index" # requests to root of app should go to the welcome controller's index page
+  root "welcome#index"
+end
+# requests to root of app should go to the welcome controller's index page
 #  ^        ^      ^-- action
 #  request  controller
 
@@ -63,4 +65,3 @@ Myapp::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
